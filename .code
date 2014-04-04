@@ -54,12 +54,17 @@ void loop(){
   	break;
   
 	case 0x010:
-  		case 0x810:
  	analogWrite(led,255);
   	analogWrite(led2,0);
   	analogWrite(led3,0);
   	break;
 
+        case 0x810:
+        analogWrite(led,0);
+  	analogWrite(led2,255);
+  	analogWrite(led3,0);
+        break;
+        
         case 0x410:
  	analogWrite(led,0);
   	analogWrite(led2,0);
